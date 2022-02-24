@@ -1,0 +1,148 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <!-- <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'cafe.jpg' %}" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="80" height="80" fill="#777"/></svg>
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>แนะนำร้านกาแฟรอบมหาวิทยาลัยอุบลราชธานี</h1>
+            <p>เว็บไซต์เราเป็นเว็บไซต์ที่แนะนำคาเฟ่รอบมหาวิทยาลัยอุบลราชธานี สร้างมาเพื่อแนะนำและรีวิวร้านคาเฟ่ดังกล่าว.</p>
+            <p><a class="btn btn-lg btn-primary" href="{% url 'register'%}">สมัครสมาชิกตอนนี้!</a></p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+
+        <!-- <div class="container"> -->
+          <!-- <div class="carousel-caption"> -->
+     <!-- <       h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p> -->
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="{% static 'noomlamoon.jpg' %}" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text><br><br></svg>
+
+        <h2>นมละมุน</h2>
+        <p>ร้านคาเฟ่น่ารักๆ นมละมุน มีบริการทั้งอาหารคาว ขนมหวาน บิงซู และเครื่องดื่ม มีให้เลือกเยอะและหลากหลายทุกประเภท เป็นร้านขวัญใจเด็กมอแถวนี้ ร้านตกแต่งได้น่ารัก แนวอบอุ่นๆ เน้นโทนสีเหลือง ตัวร้านกว้างขวาง มีที่นั่งให้เลือกเยอะและหลากหลายทั้งโซฟา โต๊ะกลุ่ม โต๊ะนั่งริมหน้าต่าง</p>
+        <p><a class="btn btn-secondary" href="{% url 'noomlamoon'%}">ดูรายละเอียด &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="{% static 'Shade.jpg' %}" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text><br><br></svg>
+
+        <h2>Shade Cafe'</h2>
+        <p>ร้านคาเฟ่เปิดใหม่ย่าน ม.อุบล ตกแต่งร้านด้วย สีขาว ดำ และไม้สีน้ำตาล  ให้ความรู้สึกที่ไม่ได้หวานมากเกินไป แต่ก็ยังละมุนในเวลาเดียวกัน จุดถ่ายรูปของร้านที่แอดแนะนำคือประตูทางเข้าสีดำที่สูงมาก ทางร้านมีทั้งโซนด้านใน และโซนด้านนอก ให้เลือกนั่งชิว เมนูแนะนำทางร้านสำหรับสายหวานไม่เน้นกาแฟ คือเมนูโกโก้ซิกเนเจอร์ เครื่องดื่มและขนมยังราคาไม่แพง เรียกได้ว่าเอาใจเด็กมอมากเลย  ร้านพึ่งเปิดได้ไม่กี่วัน มาตำกันน้า </p>
+        <p><a class="btn btn-secondary" href="{% url 'shadecafe'%}">ดูรายละเอียด &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="{% static 'fongnom.jpg' %}" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text><br><br></svg>
+        <h2>Fongnom cafe'</h2>
+        <p>กาแฟอร่อยนุ่มละมุนมากครับ พี่เจ้าของร้านบริการดี บรรยากาศร้านดีมากครับ มุมถ่ายรูปสวยๆเยอะเลยครับ ชาเขียวคือเดอะเบส หอมมากกกกกกกกกกกกกกกกกก หวานกำลังดี อร่อยทุกเมนู ต้องลอง ❤️</p>
+        <p><a class="btn btn-secondary" href="{% url 'fongnomcafe'%}">ดูรายละเอียด &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">นมละมุน <span class="text-muted"></span></h2>
+        <p class="lead">ร้านคาเฟ่น่ารักๆ นมละมุน มีบริการทั้งอาหารคาว ขนมหวาน บิงซู และเครื่องดื่ม มีให้เลือกเยอะและหลากหลายทุกประเภท เป็นร้านขวัญใจเด็กมอแถวนี้ ร้านตกแต่งได้น่ารัก แนวอบอุ่นๆ เน้นโทนสีเหลือง ตัวร้านกว้างขวาง มีที่นั่งให้เลือกเยอะและหลากหลายทั้งโซฟา โต๊ะกลุ่ม โต๊ะนั่งริมหน้าต่าง</p>
+      </div>
+      <div class="col-md-5">
+        <img src="{% static 'noomlamoon.jpg' %}" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
+    </div>
+    <p><a class="btn btn-secondary" href="{% url 'noomlamoon'%}">ดูรายละเอียด &raquo;</a></p
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Shade Cafe' <span class="text-muted"></span></h2>
+        <p class="lead">ร้านคาเฟ่เปิดใหม่ย่าน ม.อุบล ตกแต่งร้านด้วย สีขาว ดำ และไม้สีน้ำตาล  ให้ความรู้สึกที่ไม่ได้หวานมากเกินไป แต่ก็ยังละมุนในเวลาเดียวกัน จุดถ่ายรูปของร้านที่แอดแนะนำคือประตูทางเข้าสีดำที่สูงมาก ทางร้านมีทั้งโซนด้านใน และโซนด้านนอก ให้เลือกนั่งชิว เมนูแนะนำทางร้านสำหรับสายหวานไม่เน้นกาแฟ คือเมนูโกโก้ซิกเนเจอร์ เครื่องดื่มและขนมยังราคาไม่แพง เรียกได้ว่าเอาใจเด็กมอมากเลย  ร้านพึ่งเปิดได้ไม่กี่วัน มาตำกันน้า </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="{% static 'Shade.jpg' %}" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
+    <br><br><p><a class="btn btn-secondary" href="{% url 'shadecafe'%}">ดูรายละเอียด &raquo;</a></p
+    </div>
+
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Fongnom Cafe' <span class="text-muted"></span></h2>
+        <p class="lead">กาแฟอร่อยนุ่มละมุนมากครับ พี่เจ้าของร้านบริการดี บรรยากาศร้านดีมากครับ มุมถ่ายรูปสวยๆเยอะเลยครับ ชาเขียวคือเดอะเบส หอมมากกกกกกกกกกกกกกกกกก หวานกำลังดี อร่อยทุกเมนู ต้องลอง ❤️</p>
+      </div>
+      <div class="col-md-5">
+        <img src="{% static 'fongnom.jpg' %}" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
+    </div>
+    <p><a class="btn btn-secondary" href="{% url 'fongnomcafe'%}">ดูรายละเอียด &raquo;</a></p
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  {% endblock content %}

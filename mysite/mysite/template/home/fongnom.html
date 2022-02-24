@@ -1,0 +1,97 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Noomlamoon Cafe'</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/starter-template/">
+
+
+
+    <!-- Bootstrap core CSS -->
+<link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="{% static 'icon.png' %}" sizes="180x180">
+<link rel="icon" href="{% static 'icon.png' %}" sizes="32x32" type="image/png">
+<link rel="icon" href="{% static 'icon.png' %}" sizes="16x16" type="image/png">
+<link rel="manifest" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="{% static 'icon.png' %}" color="#7952b3">
+<link rel="icon" href="{% static 'icon.ico' %}">
+<meta name="theme-color" content="#7952b3">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/starter-template.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div class="col-lg-8 mx-auto p-3 py-md-5">
+  <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+    <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+
+      <span class="fs-4">Fongnom Cafe'(ฟองนม คาเฟ่)</span>
+    </a>
+  </header>
+
+  <main>
+    <h1>Fongnom Cafe'(ฟองนม คาเฟ่)🌵</h1>
+    <p class="fs-5 col-md-8">เป็นร้านที่ลูกค้าชอบคิดเมนูมาให้ แล้วแม่ค้าก็ทำให้ตลอด แค่มีหลักยึดในการชง จะพลิกแพลงเมนูได้หลากหลายและอร่อยแปลกใหม่ กาแฟอร่อยนุ่มละมุนมากครับ พี่เจ้าของร้านบริการดี บรรยากาศร้านดีมากครับ มุมถ่ายรูปสวยๆเยอะเลยครับ ชาเขียวคือเดอะเบส หอมมากกกกกกกกกกกกกกกกกก หวานกำลังดี อร่อยทุกเมนู ต้องลอง ❤️ <br><br><br><br></p>
+    <div class="mb-5">
+      <div class="col-lg-4">
+          <h2>ภาพบรรยากาศร้าน<br><br></h2>
+        <img src="{% static 'fongnom1.jpg' %}" width="600" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text><br><br><br><br><br><br></svg>
+        <img src="{% static 'fongnom2.jpg' %}" width="600" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text><br><br><br><br><br><br></svg>
+        <img src="{% static 'fongnom3.jpg' %}" width="600" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text><br><br><br><br><br><br></svg>
+        <img src="{% static 'fongnom4.jpg' %}" width="600" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text><br><br><br><br><br><br></svg>
+        <img src="{% static 'fongnom5.jpg' %}" width="600" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text><br><br><br><br><br><br></svg>
+    </div>
+
+    <hr class="col-3 col-md-2 mb-5">
+
+    <div class="row g-5">
+      <div class="fs-5 col-md-8">
+        <h2>แผนที่ร้าน (Fongnom Cafe' Location)</h2>
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d572.5861115429501!2d104.90106842978616!3d15.109672723370425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311685e6bf78210d%3A0x136b55e744cb790e!2z4LiE4Lij4Lix4Lin4LiI4Lix4LiZ4LiX4Lij4LmM4LmA4Lic4Lii!5e0!3m2!1sth!2sth!4v1645066946809!5m2!1sth!2sth" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+        <ul class="icon-list">
+
+        </ul>
+      </div>
+
+
+  <footer class="pt-5 my-5 text-muted border-top">
+    &middot; &copy;Copyright 2022.
+  </footer>
+</div>
+
+
+    <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
+  {% endblock content %}
